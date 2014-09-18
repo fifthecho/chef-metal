@@ -19,8 +19,10 @@ class Chef::Resource::Machine < Chef::Resource::LWRPBase
 
   # Driver attributes
   attribute :driver
-  attribute :machine_options
 
+  # Machine options
+  attribute :machine_options
+  
   # Node attributes
   Cheffish.node_attributes(self)
 
